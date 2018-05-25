@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+	 <include
+        android:id="@+id/discussad_bar"
+        layout="@layout/discussad_bar" />  
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="150px" >
+        
+        <ImageView android:id="@+id/image_discuss"
+       	    android:layout_height="120px"
+       	    android:layout_width="120px"
+       	    android:layout_marginTop="20px"
+       	    android:layout_marginLeft="20px"
+       	    android:layout_marginRight="20px"
+       	    android:adjustViewBounds="true"
+       	    android:scaleType="centerInside"
+       	    android:background="@drawable/headd"/>
+    	<EditText android:id="@+id/discuss_name"
+    	    android:hint="群名称"
+    	    android:layout_gravity="center"
+    	    android:layout_marginRight="20px"
+    	    android:paddingLeft="20px"
+    	    android:paddingTop="15px"
+    	    android:textSize="40px"
+    	    android:layout_toRightOf="@+id/userimage_froum"
+        	android:layout_width="match_parent"
+        	android:textColor="#363636"
+        	android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" 
+		android:background="@drawable/base_edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.8" >
+
+
+        <EditText
+            android:id="@+id/discuss_detail"
+            style="@style/Register_Edit"
+            android:hint="群简介。。。" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/discuss_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:alpha="0.8"
+        android:layout_margin="@dimen/activity_vertical_margin"
+		android:background="#00BFFF"
+        android:text="创建"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

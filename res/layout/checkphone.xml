@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/backgroungchange"
+    android:orientation="vertical" >
+
+	 <include
+        android:id="@+id/check_updatepass_bar"
+        layout="@layout/check_updatepass_bar" />  
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="手机号"
+             />
+
+        <EditText
+            android:id="@+id/phonecheck"
+            style="@style/Register_Edit"
+            android:hint="请输入手机号" />
+        <Button android:id="@+id/sendcheckcode"
+            android:text="发送验证码"
+            style="@style/Register_Edit"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="验证码"
+             />
+
+        <EditText
+            android:id="@+id/checkcode"
+            style="@style/Register_Edit"
+             android:inputType="textEmailAddress"
+            android:hint="请输入验证码" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/checkphone_state"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:alpha="0.8"
+        android:layout_margin="@dimen/activity_vertical_margin"
+		android:background="#00BFFF"
+        android:text="验证"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+    
+    
+
+</LinearLayout>

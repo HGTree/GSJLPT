@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:radius="9dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="#EE6AA7"
+        />
+    <solid
+        android:color="#BBCD96CD"/><!-- 填充的颜色 -->
+    
+</shape>
+    

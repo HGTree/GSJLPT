@@ -1,0 +1,27 @@
+<LinearLayout
+    android:id="@+id/four"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+   	<include
+        android:id="@+id/froum_bar"
+        layout="@layout/froum_top_bar" />
+   	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" 
+        >
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+        
+        
+    </RelativeLayout>
+</LinearLayout>

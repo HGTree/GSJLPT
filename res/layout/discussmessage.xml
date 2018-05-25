@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+   	<include
+        android:id="@+id/discussmessage_bar"
+        layout="@layout/discussmessage_bar" 
+        />
+
+   	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" 
+        android:layout_below="@+id/discussmessage_bar"
+        >
+
+        <ListView
+            android:id="@+id/discussmessage_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </RelativeLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:background="@drawable/base_edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:alpha="0.7"
+        android:layout_marginRight="10px"
+        android:layout_marginLeft="10px"
+         android:layout_alignParentBottom="true">
+       
+        <EditText
+            android:id="@+id/discuss_message"
+            style="@style/Register_Edit" />
+        
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:id="@+id/discuss_message_input"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="发送"
+             />
+    </LinearLayout>
+    
+    
+</LinearLayout>

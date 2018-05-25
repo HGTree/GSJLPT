@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+	 <include
+        android:id="@+id/update_userinfo"
+        layout="@layout/updateuserinfo_bar" />  
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="姓名"
+             />
+
+        <EditText
+            android:id="@+id/upusername"
+            style="@style/Register_Edit"
+            android:hint="请输入真实姓名" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="邮箱"
+             />
+
+        <EditText
+            android:id="@+id/upemail"
+            style="@style/Register_Edit"
+             android:inputType="textEmailAddress"
+            android:hint="请输入邮箱" />
+    </LinearLayout>
+
+    
+    
+    <LinearLayout style="@style/Register_Input"
+         >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="性别"
+             />
+
+        <RadioGroup android:id="@+id/radio_upsex"
+            android:orientation="horizontal"
+            style="@style/Register_Edit">
+            <RadioButton android:id="@+id/upsex_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#383838"
+                android:text="男"
+                android:checked="true"/>
+            <RadioButton android:id="@+id/upsex_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#383838"
+                android:text="女"
+                />
+            
+        </RadioGroup>
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="部门"
+             />
+
+        <Spinner android:entries="@array/ctype"
+            android:id="@+id/updepartment"
+            style="@style/Register_Edit"
+            android:hint="请选择部门" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="职位"
+             />
+
+        <EditText
+            android:id="@+id/uprole"
+            style="@style/Register_Edit"
+            android:hint="请输入职位" />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="手机号"
+             />
+
+        <EditText
+            android:id="@+id/upphone"
+            style="@style/Register_Edit"
+            android:hint="请输入手机号" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateuserinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:alpha="0.8"
+        android:layout_margin="@dimen/activity_vertical_margin"
+		android:background="#00BFFF"
+        android:text="修改"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

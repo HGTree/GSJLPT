@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gsjl.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	    <!--网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--摄像头-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--录音-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.example.gsjl.MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="Bmob_APP_KEY"
+            android:value="2ab0e841d7533bad91345fb6ccee44b4" />
+        
+        <receiver android:name="cn.bmob.newim.core.ConnectChangeReceiver">
+            <intent-filter>
+                <action android:name="cn.bmob.action.RECONNECT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="cn.bmob.newim.core.service.BmobIMService"
+            android:process=":bmobcore" />
+        <service
+            android:name="cn.bmob.newim.core.service.NotifyService"
+            android:process=":bmobcore" />
+        <service android:name="cn.bmob.newim.core.service.ReConnectService" />
+        <service android:name="cn.bmob.newim.core.service.HeartBeatService" />
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".RegisterActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".UserinfoActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".UpdateUserinfoActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".CheckPhoneActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".UpdatePasswordActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".DepartmentinfoActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".DepartmentAddActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".AddfroumActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".FroumDetailActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".AddDiscussActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".DiscussMessageActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".DissucssDetailActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".TalkMessageActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".TalkDetailActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".ChooseImageActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".AddUserActivity">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name=".SerachActivity">
+        </activity>
+        
+        
+    </application>
+
+</manifest>

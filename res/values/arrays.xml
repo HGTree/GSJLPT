@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <string-array name="ctype">
+        <item></item>
+        <item>技术部</item>
+        <item>开发部</item>
+        <item>销售部</item>
+        <item>行政部</item>
+        <item>财务部</item>
+    </string-array>
+</resources>

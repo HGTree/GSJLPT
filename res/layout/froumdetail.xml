@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+   	<include
+        android:id="@+id/froumdetail_bar"
+        layout="@layout/froumdetail_bar" />
+   	<TextView android:id="@+id/froum_title"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="120px"
+   	    android:gravity="center"
+   	    android:background="#99551A8B"
+   	    android:textSize="40px"
+   	    android:text="为什么哭泣，"/>
+   	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" 
+        >
+
+        <ListView
+            android:id="@+id/froumdetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+    </RelativeLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:background="@drawable/base_edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:alpha="0.7"
+        android:layout_marginRight="10px"
+        android:layout_marginLeft="10px"
+         android:layout_alignParentBottom="true">
+       
+        <EditText
+            android:id="@+id/froum_message"
+            style="@style/Register_Edit" />
+        
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:id="@+id/froum_message_input"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="发送"
+             />
+    </LinearLayout>
+    
+</LinearLayout>

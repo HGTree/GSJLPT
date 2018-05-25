@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+	 <include
+        android:id="@+id/talkdetail_bar"
+        layout="@layout/talkdetail_bar" />  
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="姓名："
+             />
+
+        <TextView android:id="@+id/talkusernamein"
+            android:text="某某"
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="邮箱："
+             />
+
+        <TextView android:id="@+id/talkemailin"
+            android:text="11111111@qq.com"
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+
+    
+    <LinearLayout style="@style/Register_Input"
+         >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="性别："
+             />
+
+        <TextView android:id="@+id/talksexin"
+            android:text="男"
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+            
+        
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="部门："
+             />
+
+        <TextView android:id="@+id/talkdepartmentin"
+            android:text="技术部"
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="职位："
+             />
+
+        <TextView android:id="@+id/talkrolein"
+            android:text="员工"
+           style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="手机号："
+             />
+
+        <TextView android:id="@+id/talkphonein"
+            android:text="11111111"
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/talk_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:alpha="0.8"
+        android:layout_margin="@dimen/activity_vertical_margin"
+		android:background="#00BFFF"
+        android:text="确认"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout android:layout_width="match_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        >
+        <fragment 
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.gsjl.fragment.Me_fragment"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#668C8C8C"
+        android:paddingBottom="10px">
+        <ImageView android:id="@+id/me_image"
+            android:layout_width="0dp"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:paddingTop="15px"
+            android:src="@xml/me_state"/>
+        <ImageView android:id="@+id/talk_image"
+            android:layout_width="0dp"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:paddingTop="15px"
+            android:src="@xml/talk_state"/>
+        <ImageView android:id="@+id/discuss_image"
+            android:layout_width="0dp"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:paddingTop="15px"
+            android:src="@xml/discuss_state"/>
+        <ImageView android:id="@+id/forum_image"
+            android:layout_width="0dp"
+            android:layout_height="70px"
+            android:layout_weight="1"
+            android:paddingTop="15px"
+            android:src="@xml/forum_state"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#99F0F8FF"
+    android:orientation="vertical" >
+
+    <ImageView android:id="@+id/talk_userimage"
+       	    android:layout_height="100px"
+       	    android:layout_width="100px"
+       	    android:paddingLeft="20px"
+       	    android:adjustViewBounds="true"
+       	    android:scaleType="centerInside"/>
+    <TextView android:id="@+id/talk_username"
+    	    android:text="用户名称"
+    	    android:paddingLeft="20px"
+    	    android:textSize="40px"
+    	    android:layout_toRightOf="@+id/talk_userimage"
+        	android:layout_width="wrap_content"
+        	android:textColor="#363636"
+        	android:layout_height="wrap_content"/>
+    
+    <TextView android:id="@+id/email_talk"
+    	    android:textSize="32px"
+    	    android:paddingLeft="20px"
+			android:layout_below="@+id/talk_username"
+			android:layout_alignLeft="@+id/talk_username"
+    	    android:textColor="#BB383838"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+</RelativeLayout>

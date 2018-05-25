@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+	 <include
+        android:id="@+id/departmentadd_bar"
+        layout="@layout/departmentadd_bar" />  
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="部门名称"
+             />
+
+        <EditText
+            android:id="@+id/department_name"
+            style="@style/Register_Edit"
+            android:hint="" />
+        
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" 
+		android:background="@drawable/base_edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.8" >
+
+
+        <EditText
+            android:id="@+id/department_detail"
+            style="@style/Register_Edit"
+            android:hint="部门简介。。。" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/department_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:alpha="0.8"
+        android:layout_margin="@dimen/activity_vertical_margin"
+		android:background="#00BFFF"
+        android:text="增加"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

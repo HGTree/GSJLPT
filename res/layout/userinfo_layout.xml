@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+	 <include
+        android:id="@+id/user_info_bar"
+        layout="@layout/user_info_bar" />  
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="姓名："
+             />
+
+        <TextView android:id="@+id/usernamein"
+            android:text=""
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="邮箱："
+             />
+
+        <TextView android:id="@+id/emailin"
+            android:text=""
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+
+    
+    <LinearLayout style="@style/Register_Input"
+         >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="性别："
+             />
+
+        <TextView android:id="@+id/sexin"
+            android:text=""
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+            
+        
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="部门："
+             />
+
+        <TextView android:id="@+id/departmentin"
+            android:text=""
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="职位："
+             />
+
+        <TextView android:id="@+id/rolein"
+            android:text=""
+           style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+    
+    <LinearLayout style="@style/Register_Input" >
+
+        <TextView
+            style="@style/Smile.TextView._Black"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="手机号："
+             />
+
+        <TextView android:id="@+id/phonein"
+            android:text=""
+            style="@style/Smile.TextView._Black"
+            android:alpha="0.8"
+             />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        android:alpha="0.8"
+        android:layout_margin="@dimen/activity_vertical_margin"
+		android:background="#00BFFF"
+        android:text="修改"
+        android:textColor="@color/base_color_text_white"
+        android:textSize="@dimen/text_size_large" />
+
+</LinearLayout>

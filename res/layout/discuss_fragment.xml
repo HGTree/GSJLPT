@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/four"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#436EEE"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            style="@style/Smile.TextView._White"
+            android:layout_centerInParent="true"
+            android:text="联系人"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/discuss_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:alpha="0.7"
+        android:background="@drawable/base_edit_input"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/discuss_name"
+            style="@style/Register_Edit" 
+            android:textSize="40px"
+            android:gravity="center_vertical"
+            android:textColor="#991A1A1A"
+            android:hint="搜索"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/searchlayout"
+        android:layout_marginBottom="8px"
+        android:layout_marginTop="8px"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/discuss_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#9971C671"
+            android:gravity="center_horizontal"
+            android:paddingTop="10px"
+            android:text="好友"
+            android:textColor="#5D478B"
+            android:textSize="38px" />
+
+        <TextView
+            android:id="@+id/discuss_crowd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#9971C671"
+            android:gravity="center_horizontal"
+            android:paddingTop="10px"
+            android:text="群聊"
+            android:textColor="#5D478B"
+            android:textSize="38px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab" >
+
+        <FrameLayout
+            android:id="@+id/which_fragment"
+          
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

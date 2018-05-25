@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#99F0F8FF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/department_name"
+        android:layout_width="match_parent"
+        style="@style/Smile.TextView._Black" 
+        android:text="开发部"
+        android:singleLine="true"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/department_detail"
+        android:layout_marginTop="10dp"
+        android:text="负责公司新产品的开发和测试以及对产品售后问题的修复。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/department_name" 
+        android:minLines="1"
+        android:textColor="#CC363636"
+        android:textSize="16sp"
+        >
+    </TextView>
+
+</RelativeLayout>

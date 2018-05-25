@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical" >
+		<TextView android:id="@+id/discussmessage_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"/>
+    	<ImageView android:id="@+id/image_discuss_user"
+       	    android:layout_height="70px"
+       	    android:layout_width="70px"
+       	    android:layout_below="@+id/discussmessage_time"
+       	    android:layout_alignParentLeft="true"
+       	    android:adjustViewBounds="true"
+       	    android:scaleType="centerInside"
+       	    android:src="@drawable/head2"/>
+    	<TextView android:id="@+id/discussmessage_user"
+    	    android:text="今天过的怎么样？"
+    	    android:background="@drawable/message"
+    	    android:layout_gravity="center"
+    	    android:layout_marginRight="20px"
+    	    android:textSize="28px"
+    	    android:layout_marginLeft="30px"
+    	    android:layout_marginTop="10px"
+    	    android:paddingLeft="20px"
+    	    android:paddingRight="20px"
+    	    android:paddingTop="5px"
+    	    android:paddingBottom="5px"
+    	    android:layout_below="@+id/discussmessage_time"
+    	    android:layout_toRightOf="@+id/image_discuss_user"
+        	android:layout_width="wrap_content"
+        	android:textColor="#030303"
+        	android:layout_height="wrap_content"/>
+
+</RelativeLayout>

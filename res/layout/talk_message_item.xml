@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#99F0F8FF"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/message_image"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:paddingLeft="20px"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@+id/message_image"
+        android:text="用户名称"
+        android:textColor="#363636"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/message_newmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_below="@+id/message_name"
+        android:layout_toRightOf="@+id/message_image"
+        android:textColor="#BB383838"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20px"
+        android:text="用户名称"
+        android:textColor="#363636"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/message_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/message_time"
+        android:layout_marginRight="20px"
+        android:paddingRight="10px"
+        android:paddingLeft="10px"
+        android:textColor="#F0F0F0"
+        android:background="#AAFF0000"
+        android:textSize="32px" />
+
+</RelativeLayout>

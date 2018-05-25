@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/four"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#436EEE"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/serach_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" 
+            android:background="@drawable/back"/>
+
+        <TextView
+            style="@style/Smile.TextView._White"
+            android:layout_centerInParent="true"
+            android:text="搜索好友/群聊"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/serach_context"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:alpha="0.7"
+        android:background="@drawable/base_edit_input"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/serachdetail"
+            style="@style/Register_Edit" 
+            />
+		<TextView 
+		    android:id="@+id/search_user"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="36px"
+		    android:layout_marginRight="40px"
+		    android:textColor="#991A1A1A"
+		    android:text="搜索"
+		    android:gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/serach_context"
+        >
+
+        <ListView
+            android:id="@+id/serachlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

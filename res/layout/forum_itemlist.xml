@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#99F0F8FF"
+    android:orientation="vertical" >
+
+    <ImageView android:id="@+id/userimage_froum"
+       	    
+       	    android:layout_height="80px"
+       	    android:layout_width="80px"
+       	    android:paddingLeft="20px"
+       	    android:adjustViewBounds="true"
+       	    android:scaleType="centerInside"
+       	    />
+    <TextView android:id="@+id/username_froum"
+    	    android:text="张三"
+    	    android:paddingLeft="20px"
+    	    android:paddingTop="15px"
+    	    android:textSize="40px"
+    	    android:layout_toRightOf="@+id/userimage_froum"
+        	android:layout_width="wrap_content"
+        	android:textColor="#363636"
+        	android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/froum_detail"
+        android:layout_marginTop="10dp"
+        android:text="人在什么时候最开心？"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userimage_froum" 
+        android:layout_alignLeft="@+id/userimage_froum"
+        android:minLines="1"
+        android:maxLines="2"
+        android:textColor="#CC363636"
+        android:textSize="16sp"
+        />
+    <TextView android:id="@+id/time_froum"
+    	    android:text="2018/5/1 21:40"
+    	    android:textSize="30px"
+    	    android:layout_below="@+id/froum_detail"
+    	    android:layout_alignLeft="@+id/userimage_froum"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+
+</RelativeLayout>

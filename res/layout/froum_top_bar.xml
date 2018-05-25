@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_froum"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:background="#436EEE"
+    android:orientation="vertical" >
+
+    <TextView
+        
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+         />
+
+    <TextView
+        style="@style/Smile.TextView._White"
+        android:layout_centerInParent="true"
+        android:text="公司论坛"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/froum_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/add" />
+
+</RelativeLayout>
